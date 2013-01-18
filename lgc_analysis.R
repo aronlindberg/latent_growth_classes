@@ -1,5 +1,6 @@
-setwd("~/Downloads/")
+setwd("~/github/local/latent_growth_classes/")
 library(lavaan)
+library(poLCA)
 
 # Load and reshape data 
 latent.growth.data <- read.csv(file = "LGC_data.csv", header = TRUE)
@@ -65,3 +66,8 @@ inspect(quadratic,"cov.lv")
 
 # Turn off sink
 sink()
+
+# Fit a latent class model
+
+formula <- cbind(t03, t04, t05, t06, t07, t08, t09, t10, t11, t12)~1
+poLCA(formula, latent.growth.data.formatted, nclass=3)
