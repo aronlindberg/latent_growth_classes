@@ -1,19 +1,19 @@
 setwd("~/github/local/latent_growth_classes/")
 library(lavaan)
-library(poLCA)
+library(lcmm)
 
 # Load and reshape data 
-latent.growth.data <- read.csv(file = "LGC_data.csv", header = TRUE)
+latent.growth.data <- read.csv(file = "LGC_data500.csv", header = TRUE)
 
 latent.growth.data.formatted <- reshape(
-  latent.growth.data[c("top100_repository_name","month","monthly_end_with")],
-  idvar="top100_repository_name",
+  latent.growth.data[c("top500_repository_name","month","monthly_end_with")],
+  idvar="top500_repository_name",
   timevar="month",
   direction="wide"
 )
 
 # Set the column names
-names(latent.growth.data.formatted) <- c("repo_name", "t03", "t04", "t05", "t06", "t07", "t08", "t09", "t10", "t11", "t12")
+names(latent.growth.data.formatted) <- c("repo_name", "t03", "t04", "t05", "t06", "t07", "t08", "t09", "t10", "t11", "t12", "t13", "t14")
 
 # Drop the name column
 type.name <- "repo_name"
@@ -69,5 +69,4 @@ sink()
 
 # Fit a latent class model
 
-formula <- cbind(t03, t04, t05, t06, t07, t08, t09, t10, t11, t12)~1
-poLCA(formula, latent.growth.data.formatted, nclass=3)
+hlme(monthly_end_with, subject='repo_name', mixture=~x, ng=3, idiag=TRUE, data=latent.growth.data)

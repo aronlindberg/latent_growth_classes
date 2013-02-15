@@ -465,3 +465,362 @@ Warning in install.packages :
 
 The downloaded binary packages are in
 	/var/folders/kh/6jt4vmhs67s2p6md05q66sbm0000gn/T//RtmpduZazl/downloaded_packages
+lavaan (0.5-11) converged normally after 608 iterations
+
+  Number of observations                           100
+
+  Estimator                                         ML
+  Minimum Function Test Statistic             1162.214
+  Degrees of freedom                                50
+  P-value (Chi-square)                           0.000
+
+Model test baseline model:
+
+  Minimum Function Test Statistic             5947.637
+  Degrees of freedom                                45
+  P-value                                        0.000
+
+Full model versus baseline model:
+
+  Comparative Fit Index (CFI)                    0.812
+  Tucker-Lewis Index (TLI)                       0.830
+
+Loglikelihood and Information Criteria:
+
+  Loglikelihood user model (H0)              -6121.942
+  Loglikelihood unrestricted model (H1)      -5540.835
+
+  Number of free parameters                         15
+  Akaike (AIC)                               12273.885
+  Bayesian (BIC)                             12312.962
+  Sample-size adjusted Bayesian (BIC)        12265.589
+
+Root Mean Square Error of Approximation:
+
+  RMSEA                                          0.472
+  90 Percent Confidence Interval          0.448  0.495
+  P-value RMSEA <= 0.05                          0.000
+
+Standardized Root Mean Square Residual:
+
+  SRMR                                           0.014
+
+Parameter estimates:
+
+  Information                                 Expected
+  Standard Errors                             Standard
+
+                   Estimate  Std.err  Z-value  P(>|z|)
+Latent variables:
+  i =~
+    t03               1.000
+    t04               1.000
+    t05               1.000
+    t06               1.000
+    t07               1.000
+    t08               1.000
+    t09               1.000
+    t10               1.000
+    t11               1.000
+    t12               1.000
+  s =~
+    t03               0.000
+    t04               1.000
+    t05               2.000
+    t06               3.000
+    t07               4.000
+    t08               5.000
+    t09               6.000
+    t10               7.000
+    t11               8.000
+    t12               9.000
+
+Covariances:
+  i ~~
+    s             60766.285 10057.923    6.042    0.000
+
+Intercepts:
+    t03               0.000
+    t04               0.000
+    t05               0.000
+    t06               0.000
+    t07               0.000
+    t08               0.000
+    t09               0.000
+    t10               0.000
+    t11               0.000
+    t12               0.000
+    i               779.186   87.872    8.867    0.000
+    s                61.096    9.111    6.706    0.000
+
+Variances:
+    t03            1858.043  301.966
+    t04            -430.860  143.267
+    t05            7948.429 1081.499
+    t06            5074.456  695.844
+    t07            9372.658 1314.319
+    t08            6188.597  891.649
+    t09            5721.448  856.795
+    t10            4148.631  678.052
+    t11            3868.660  694.668
+    t12            1643.794  547.856
+    i             773125.039 109200.584
+    s              8302.476 1174.036
+
+lavaan (0.5-11) converged normally after 530 iterations
+
+  Number of observations                           100
+
+  Estimator                                         ML
+  Minimum Function Test Statistic             2489.260
+  Degrees of freedom                                46
+  P-value (Chi-square)                           0.000
+
+Model test baseline model:
+
+  Minimum Function Test Statistic             5947.637
+  Degrees of freedom                                45
+  P-value                                        0.000
+
+Full model versus baseline model:
+
+  Comparative Fit Index (CFI)                    0.586
+  Tucker-Lewis Index (TLI)                       0.595
+
+Loglikelihood and Information Criteria:
+
+  Loglikelihood user model (H0)              -6785.466
+  Loglikelihood unrestricted model (H1)      -5540.835
+
+  Number of free parameters                         19
+  Akaike (AIC)                               13608.931
+  Bayesian (BIC)                             13658.429
+  Sample-size adjusted Bayesian (BIC)        13598.423
+
+Root Mean Square Error of Approximation:
+
+  RMSEA                                          0.729
+  90 Percent Confidence Interval          0.705  0.753
+  P-value RMSEA <= 0.05                          0.000
+
+Standardized Root Mean Square Residual:
+
+  SRMR                                           0.457
+
+Parameter estimates:
+
+  Information                                 Expected
+  Standard Errors                             Standard
+
+                   Estimate  Std.err  Z-value  P(>|z|)
+Latent variables:
+  i =~
+    t03               1.000
+    t04               1.000
+    t05               1.000
+    t06               1.000
+    t07               1.000
+    t08               1.000
+    t09               1.000
+    t10               1.000
+    t11               1.000
+    t12               1.000
+  s =~
+    t03               0.000
+    t04               1.000
+    t05               2.000
+    t06               3.000
+    t07               4.000
+    t08               5.000
+    t09               6.000
+    t10               7.000
+    t11               8.000
+    t12               9.000
+  quad =~
+    t03               0.000
+    t04               1.000
+    t05               4.000
+    t06               9.000
+    t07              16.000
+    t08              25.000
+    t09              36.000
+    t10              49.000
+    t11              64.000
+    t12              81.000
+
+Covariances:
+  i ~~
+    s             43480.816 8485.798    5.124    0.000
+    quad          -2843.632  215.309  -13.207    0.000
+  s ~~
+    quad             78.473  147.150    0.533    0.594
+
+Intercepts:
+    t03               0.000
+    t04               0.000
+    t05               0.000
+    t06               0.000
+    t07               0.000
+    t08               0.000
+    t09               0.000
+    t10               0.000
+    t11               0.000
+    t12               0.000
+    i               705.525   33.595   21.001    0.000
+    s                78.540   24.395    3.219    0.001
+    quad             -0.720    0.433   -1.662    0.096
+
+Variances:
+    t03           609916.983 55915.331
+    t04           308726.717 28860.597
+    t05           135687.178 13208.202
+    t06           36840.501 3871.762
+    t07            5410.566 1043.203
+    t08            2327.371  462.888
+    t09           11603.040 1347.788
+    t10            6687.176  766.135
+    t11             605.975  521.965
+    t12            7511.980  768.842
+    i             11239.157 17074.225
+    s             47791.346 8444.692
+    quad            -56.463    5.380
+
+lavaan (0.5-11) converged normally after 1072 iterations
+
+  Number of observations                           100
+
+  Estimator                                         ML
+  Minimum Function Test Statistic             1711.048
+  Degrees of freedom                                41
+  P-value (Chi-square)                           0.000
+
+Model test baseline model:
+
+  Minimum Function Test Statistic             5947.637
+  Degrees of freedom                                45
+  P-value                                        0.000
+
+Full model versus baseline model:
+
+  Comparative Fit Index (CFI)                    0.717
+  Tucker-Lewis Index (TLI)                       0.689
+
+Loglikelihood and Information Criteria:
+
+  Loglikelihood user model (H0)              -6396.359
+  Loglikelihood unrestricted model (H1)      -5540.835
+
+  Number of free parameters                         24
+  Akaike (AIC)                               12840.719
+  Bayesian (BIC)                             12903.243
+  Sample-size adjusted Bayesian (BIC)        12827.445
+
+Root Mean Square Error of Approximation:
+
+  RMSEA                                          0.638
+  90 Percent Confidence Interval          0.613  0.664
+  P-value RMSEA <= 0.05                          0.000
+
+Standardized Root Mean Square Residual:
+
+  SRMR                                           0.659
+
+Parameter estimates:
+
+  Information                                 Expected
+  Standard Errors                             Standard
+
+                   Estimate  Std.err  Z-value  P(>|z|)
+Latent variables:
+  i =~
+    t03               1.000
+    t04               1.000
+    t05               1.000
+    t06               1.000
+    t07               1.000
+    t08               1.000
+    t09               1.000
+    t10               1.000
+    t11               1.000
+    t12               1.000
+  s =~
+    t03               0.000
+    t04               1.000
+    t05               2.000
+    t06               3.000
+    t07               4.000
+    t08               5.000
+    t09               6.000
+    t10               7.000
+    t11               8.000
+    t12               9.000
+  quad =~
+    t03               0.000
+    t04               1.000
+    t05               4.000
+    t06               9.000
+    t07              16.000
+    t08              25.000
+    t09              36.000
+    t10              49.000
+    t11              64.000
+    t12              81.000
+  cube =~
+    t03               0.000
+    t04               1.000
+    t05               8.000
+    t06              27.000
+    t07              64.000
+    t08             125.000
+    t09             216.000
+    t10             343.000
+    t11             512.000
+    t12             729.000
+
+Covariances:
+  i ~~
+    s             76857.566 13696.411    5.612    0.000
+    quad          -6759.731 3135.476   -2.156    0.031
+    cube            212.096  190.012    1.116    0.264
+  s ~~
+    quad          -16227.878 2448.116   -6.629    0.000
+    cube           1080.183  150.345    7.185    0.000
+  quad ~~
+    cube           -299.386   37.107   -8.068    0.000
+
+Intercepts:
+    t03               0.000
+    t04               0.000
+    t05               0.000
+    t06               0.000
+    t07               0.000
+    t08               0.000
+    t09               0.000
+    t10               0.000
+    t11               0.000
+    t12               0.000
+    i               855.047   45.914   18.623    0.000
+    s                13.713   25.274    0.543    0.587
+    quad             10.568    6.215    1.700    0.089
+    cube             -0.721    0.386   -1.869    0.062
+
+Variances:
+    t03           520811.143 45015.825
+    t04           228416.704 18892.288
+    t05           79465.909 6174.462
+    t06           23503.928 1781.412
+    t07           -3717.402  277.252
+    t08            3881.926  314.209
+    t09            5380.337  574.120
+    t10            1051.305  293.532
+    t11            1929.004  240.789
+    t12           -3055.981  590.668
+    i             27475.963 32733.676
+    s             52257.284 10324.100
+    quad           4655.702  601.866
+    cube             19.106    2.289
+
+     i         s         quad     
+i    11239.157                    
+s    43480.816 47791.346          
+quad -2843.632    78.473   -56.463

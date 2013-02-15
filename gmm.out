@@ -1,0 +1,39 @@
+Mplus VERSION 6.12
+MUTHEN & MUTHEN
+02/15/2013  10:07 AM
+
+INPUT INSTRUCTIONS
+
+  Title:      Loading data from CSV and performing GMM
+  DATA: FILE IS "\\tsclient\Macint1 on Aron's Macbook\Users\Aron\Downloads\output.csv";
+  VARIABLE:   NAMES ARE repo_name t03 t04 t05 t06 t07 t08 t09 t10 t11 t12;
+              CLASSES = c (2);
+  ANALYSIS:   TYPE = MIXTURE;
+              STARTS = 40 8;
+  MODEL:      %OVERALL$%
+              i s | t03@0 t04@1 t05@2 t06@3 t07@4 t08@5 t09@6 t10@7 t11@8 t12@9;
+  OUTPUT:     TECH1 TECH8;
+
+
+
+*** WARNING
+  Variable name contains more than 8 characters.
+  Only the first 8 characters will be printed in the output.
+  Variable: REPO_NAME
+*** ERROR
+  The number of observations is 0.  Check your data and format statement.
+  Data file:  \\tsclient\macint1\users\aron\github\local\latent_growth_classes\output.csv
+*** ERROR
+  Non-missing blank found in data file at record #1, field #: 1
+
+
+MUTHEN & MUTHEN
+3463 Stoner Ave.
+Los Angeles, CA  90066
+
+Tel: (310) 391-9971
+Fax: (310) 391-8971
+Web: www.StatModel.com
+Support: Support@StatModel.com
+
+Copyright (c) 1998-2011 Muthen & Muthen
